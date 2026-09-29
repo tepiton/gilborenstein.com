@@ -1,0 +1,61 @@
+/* pdf.css — print stylesheet used by the weasyprint PDF build.
+   Screen preview uses resume.css instead; this one assumes @page margins
+   do the framing, so no body max-width/centering here. */
+
+@page {
+  size: Letter;
+  margin: 0.75in;
+}
+
+body {
+  font-family: "Carlito", "Calibri", "Arial", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.35;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 22pt;
+  color: #1A7F37;
+  margin: 0 0 2pt 0;
+}
+
+h2 {
+  font-size: 13pt;
+  color: #1A7F37;
+  margin-top: 14pt;
+  margin-bottom: 4pt;
+  border-bottom: 0.75pt solid #ccc;
+  padding-bottom: 2pt;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 11pt;
+  margin-bottom: 2pt;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 6pt 0;
+}
+
+ul {
+  margin: 2pt 0 8pt 0;
+  padding-left: 1.3em;
+}
+
+li {
+  margin-bottom: 2pt;
+  page-break-inside: avoid;
+}
+
+hr {
+  border: none;
+  border-top: 0.75pt solid #999;
+  margin: 6pt 0 10pt 0;
+}
+
+strong {
+  font-weight: 600;
+}

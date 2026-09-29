@@ -1,0 +1,50 @@
+name: Build and deploy to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history so build.sh can date resume.md's last change
+      - name: Install pandoc, weasyprint, and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc weasyprint fonts-crosextra-carlito
+      - name: Build
+        run: ./build.sh _site
+      - name: Check outputs
+        run: |
+          for f in index.html resume.html resume.pdf resume.docx resume.txt; do
+            test -s "_site/$f" || { echo "missing _site/$f"; exit 1; }
+          done
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

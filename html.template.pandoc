@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="$if(lang)$$lang$$else$en$endif$">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  $if(description-meta)$<meta name="description" content="$description-meta$">$endif$
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+
+$if(url)$
+  <link rel="canonical" href="$url$">
+  <meta property="og:url" content="$url$">
+$endif$
+$if(title)$
+  <meta property="og:title" content="$title$$if(subtitle)$ – $subtitle$$endif$">
+  <meta property="og:type" content="article">
+$if(description-meta)$
+  <meta property="og:description" content="$description-meta$">
+$endif$
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="$title$$if(subtitle)$ – $subtitle$$endif$">
+$if(description-meta)$
+  <meta name="twitter:description" content="$description-meta$">
+$endif$
+$endif$
+
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+
+  <style>
+:root {
+  --font-body: Baskerville, Georgia, serif;
+  --font-heading: 'Gill Sans', 'Helvetica Neue', sans-serif;
+
+  --color-bg: #fffff8;
+  --color-text: #111;
+  --color-muted: #666;
+  --color-link: #555;
+  --color-link-hover: #222;
+  --color-border: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1d23;
+    --color-text: #dad8d8;
+    --color-muted: #888;
+    --color-link: #aaa;
+    --color-link-hover: #ccc;
+    --color-border: #333;
+  }
+}
+
+html[data-force-theme="light"],
+body.light-mode {
+  --color-bg: #fffff8;
+  --color-text: #111;
+  --color-muted: #666;
+  --color-link: #555;
+  --color-link-hover: #222;
+  --color-border: #ccc;
+}
+
+html[data-force-theme="dark"],
+body.dark-mode {
+  --color-bg: #1a1d23;
+  --color-text: #dad8d8;
+  --color-muted: #888;
+  --color-link: #aaa;
+  --color-link-hover: #ccc;
+  --color-border: #333;
+}
+
+html {
+  font-size: clamp(.8rem, .8rem + 1vw, 1.25rem);
+}
+
+body {
+  --measure: min(90%, 54ch);
+  --line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--line-height);
+  margin: 0;
+  width: 100vw;
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+  margin-bottom: 3em;
+  padding: 0 1rem;
+}
+
+h2 + *,
+* {
+  margin-block: 0;
+}
+
+* + * {
+  margin-block-start: 1rem;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3em;
+  padding-top: 1em;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  margin-bottom: .25em;
+  text-align: left;
+  margin-top: 2em;
+}
+
+h3 {
+  font-style: italic;
+  font-size: inherit;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 3em;
+  text-align: center;
+  letter-spacing: -.04em;
+}
+
+h4::before, h4::after {
+  content: "  —  ";
+}
+
+blockquote {
+  font-style: italic;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
+  padding-inline-start: 1em;
+  border-left: 1px solid var(--color-muted);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1em;
+  background-color: var(--color-border);
+  border-radius: 4px;
+}
+
+pre code {
+  font-size: 0.85em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-border);
+}
+
+#TOC {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+#TOC ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+#TOC > ul {
+  padding-left: 0;
+}
+
+#TOC li {
+  margin: 0.5rem 0;
+}
+
+#TOC a {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 3em;
+  padding-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-style: italic;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+  font-size: 1.2em;
+}
+
+.contact {
+  font-family: var(--font-heading);
+  margin-top: 1rem;
+}
+
+.contact a,
+.contact span {
+  white-space: nowrap;
+}
+
+.contact .sep {
+  color: var(--color-muted);
+}
+
+.file-size {
+  color: var(--color-muted);
+  font-size: 0.85em;
+}
+
+.author {
+  font-family: var(--font-heading);
+  color: var(--color-muted);
+  margin-top: 1rem;
+}
+
+.date {
+  font-family: var(--font-heading);
+  color: var(--color-muted);
+  font-size: 0.9em;
+}
+
+.abstract {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-left: 3px solid var(--color-border);
+  font-size: 0.95em;
+}
+
+.abstract-title {
+  font-weight: 600;
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+  </style>
+$for(header-includes)$
+  $header-includes$
+$endfor$
+$if(math)$
+  $math$
+$endif$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$elseif(objective)$
+<p class="subtitle">$objective$</p>
+$endif$
+$if(email)$
+<p class="contact"><a href="mailto:$email$">$email$</a>$if(phone)$ <span><span class="sep">·</span> $phone$</span>$endif$$if(location)$ <span><span class="sep">·</span> $location$</span>$endif$</p>
+$elseif(phone)$
+<p class="contact"><span>$phone$</span>$if(location)$ <span><span class="sep">·</span> $location$</span>$endif$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+$if(updated)$
+<p class="date">Updated $updated$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<p class="abstract-title">$if(abstract-title)$$abstract-title$$else$Abstract$endif$</p>
+$abstract$
+</div>
+$endif$
+</header>
+$endif$
+
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+$if(toc-title)$
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
+$endif$
+$table-of-contents$
+</nav>
+$endif$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "substitutions": [
+    {
+      "file": "index.md",
+      "format": "yaml-frontmatter-key",
+      "key": "url",
+      "value": "https://{domain}/"
+    }
+  ]
+}
