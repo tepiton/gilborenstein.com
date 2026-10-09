@@ -1,10 +1,13 @@
-# Gil Borenstein
-
-gil.borenstein@gmail.com - (508)-314-0057
-
+---
+title: Gil Borenstein
+objective: Resourceful and self-motivated recent graduate looking to start a career in robotics.
+email: gil.borenstein@gmail.com
+phone: (508) 314-0057
+location: Dover, NH
+description: Resume of Gil Borenstein, robotics graduatte
+lang: en
 ---
 
-Resourceful and self-motivated recent graduate looking to start a career in robotics.
 
 ## Education
 
