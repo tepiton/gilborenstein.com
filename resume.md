@@ -1,93 +1,91 @@
+# Gil Borenstein
+
+gil.borenstein@gmail.com - (508)-314-0057
+
 ---
-title: Wren Ashcombe
-objective: Resourceful and self-motivated recent graduate looking to start a career in clockwork automata and arcane engineering.
-email: wren.ashcombe@example.com
-phone: (555) 555-0142
-location: Vell, the Brass Coast
-description: Resume of Wren Ashcombe, artificer and clockwork engineer
-lang: en
----
+
+Resourceful and self-motivated recent graduate looking to start a career in robotics.
 
 ## Education
 
-**Bachelor of Artifice in Clockwork Automata (Geomancy minor)**\
-Collegium Mechanica of Vell, graduated August 2026
+**Bachelor of Science in Robotics (Math minor)**\
+Plymouth State University, graduated August 2026
 
-- Completed ley-line mapping projects and calibrated scrying lenses on multiple golem platforms.
-- Designed and prototyped pneumatic limbs for a stone golem as a senior capstone project.
-- Volunteered to set up tools and equipment on the Collegium's dwarven-forged lathe. Self-taught on its operation and trained peers on the machine.
+- Completed SLAM mapping projects and worked with ROS on multiple platforms.
+- Conducted design and prototyping of soft robotic actuators for senior project
+- Volunteered to set up tools and equipment on the Tormach 15L lathe. Self-taught on its operations and trained peers on the machine.
 
-**Associate of Runic Computation**\
-Brightwater Academy, graduated May 2020
+**Associate of Computer Science**\
+Landmark College, graduated May 2020
 
-- Editor for The Inkwell, Brightwater's literary broadsheet
-- Completed a winter term exchange program at the Sunspire Observatory (January 2018)
-- Member of the Brightwater cross-country running team
+- Editor for Impressions, Landmark's literary Magazine
+- Completed winter term study abroad program in London, England (January 2018)
+- Member of the Landmark College cross country team
 
 ## Professional Experience
 
-**Workshop Assistant (Automata Department) - Collegium Mechanica of Vell**\
+**Project Assistant (Robotics Department) - Plymouth State University**\
 September 2023 - August 2026
 
-- Supervised the Collegium artificers' workshop for day-to-day activities. This included helping students with projects, assisting faculty, instructing on fabrication methods, and general upkeep of the space.
-- Enforced safety standards for all workshop equipment, including warded forges and unstable reagents.
-- Performed routine maintenance and setup on machines and tools in the workshop (e.g. alchemical kilns, etching tables, clockwork looms).
+- Supervised the PSU makerspace for day to day activities. This included helping students with projects, assisting faculty, instructing on manufacturing processes and methods as well as general upkeep of the space.
+- Responsible for instructing and enforcing safety standards for all equipment used in the space while on shift.
+- Performed routine maintenance and setup on machines and tools in the makerspace (e.g. 3D printers, laser cutters, CNC systems).
 
-**Shop Hand - The Copper Kettle Emporium**\
+**Retail Associate - Rand's Hardware**\
 September 2023 - July 2025
 
-- Worked the counter, completed merchandising tasks, and performed routine maintenance and repair on consigned trinkets.
-- Built lasting relationships with other small merchants and the guild community at large.
+- Worked register, completed merchandising tasks, and performed routine maintenance and repair.
+- Participated in fostering continuing relationships with other small businesses and the community at large
 
-**Inventory Clerk - Greymantle Rope & Chain**\
+**Inventory Control Specialist - Stonewall Cable**\
 February 2023 - April 2023
 
-- Tracked inventory, cut chain to length, and prepared materials for assembly. Recorded which suppliers' materials went into each order. Left on good terms when a promised enchanting position failed to materialize.
+- Tracked inventory, cut cable, and prepared materials to go to assembly. Tracked which suppliers' materials were going into the product to maintain accountability and kept detailed records. Employment ended on good terms when an IT position failed to materialize.
 
-**Warehouse Associate - Stonebridge Trading Company**\
+**Logistics Associate - Harbor Freight Tools**\
 July 2020 - August 2022
 
-- Stocked shelves, arranged displays, and reconciled inventory discrepancies.
-- Served large numbers of customers in short windows, particularly during festival season and the spring floods.
-- Operated a cargo golem to unload wagons, move freight around the warehouse, and load goods for customers.
+- Stocked shelves, merchandised products, setup and maintained displays, and tracked inventory discrepancies.
+- Worked register and frequently served large numbers of customers in small windows of time, particularly during extreme weather events and holidays.
+- Operated forklift to unload trucks, move freight around the warehouse, and load products for customers.
 
-**Runic Computation Tutor - Brightwater Academy**\
+**Computer Science Support - Landmark College**\
 September 2019 - February 2020
 
-- Tutored students in runic computation, from basic sigil logic to recursive enchantments, and helped run productive study groups.
+- Tutored students in computer science concepts ranging from basic logic to data structures and above. Helped with understanding of curriculum, problem solving, and creating a productive group work environment.
 
 ## Personal Projects
 
-- Built a private message-crystal relay for sharing scrolls, maps, and songs, since expanded to multiple users.
-- Designed and cast custom fittings and tools for day-to-day use.
-- Created illustrated cards and tokens for tabletop games.
-- Informally tutored peers in a variety of runic languages and technical topics.
+- Deployed a private server system for hosting backups, files, movies, and utilities that has been expanded to multiple users.
+- Designed and printed multiple objects and solutions for day-to-day use.
+- Created digital assets for game development
+- Informal tutoring of multiple peers in a variety of programming languages and technical topics.
 
 ## Working Skills
 
-- Strong runic programming and artifice skillset
-- Low-voltage lightning-jar circuits
-- Mechanical design and fabrication
+- Strong programing/IT skillset
+- Low voltage electronics
+- 3D design and fabrication
 - Rapid prototyping
 - Hands-on maintenance and repair
-- Technical documentation and schematics
-- Mathematics for engineering applications
-- Frequently self-taught on equipment and spellwork
+- Technical documentation
+- Math for engineering applications
+- Frequently self-taught on equipment and programming
 - Strong verbal and written communication
 
 ## Programming and Software Skills
 
-- **Runic Languages:** Old Dwarvish, Glyphscript, Elvish Cursive, Common Sigil
-- **Design Tools:** Drafting table, brass compass, scale-model casting
-- **Automata Control:** Golem command lattices, homunculus rigging, clockwork governors
-- **Communication:** Message crystals, sending stones, pigeon post
-- **Reference Works:** The Artificer's Compendium, Vell Guild Safety Codex
-- **Misc:** Ledgerkeeping, cartography, basic alchemy
+- **Languages:** Python, Bash, C/C++, C#, Java, Javascript, SQL
+- **CAD / CAM Software:** Onshape, Fusion360, Mastercam, Lightburn, Orcaslicer
+- **Robotics Software:** ROS/ROS2, Roboguide, Gazebo, FANUC karel
+- **DevOps Tooling:** Docker, Tailscale, Caddy (reverse proxy)
+- **Operating Systems:** Linux (Ubuntu, Debian, Arch), Mac, Windows
+- **Misc Software:** Github, Microsoft Office Suite (Word, Excel, Onedrive, etc.), Google Workspace (Docs, Sheets, etc.)
 
 ## Hardware Systems
 
-- Ironclad-7 welding golem
-- Collaborative brass assistant (Mark II)
-- Three-axis runic engraving table
-- Dwarven-forged precision lathe
-- Multiple alchemical casting kilns
+- FANUC CRX-10I/A welding robot
+- FANUC CR-7I/A Cobot
+- Shopbot 3 axis CNC
+- Tormach 15L CNC lathe
+- Multiple 3D printing systems
