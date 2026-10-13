@@ -1,0 +1,7 @@
+# docker compose run --rm build          -> ./dist
+# docker compose run --rm build _site    -> ./_site (what CI builds)
+services:
+  build:
+    build: .
+    volumes:
+      - .:/work
