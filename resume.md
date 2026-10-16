@@ -4,7 +4,7 @@ objective: Resourceful and self-motivated recent graduate looking to start a car
 email: gil.borenstein@gmail.com
 phone: (508) 314-0057
 location: Dover, NH
-description: Resume of Gil Borenstein, robotics graduatte
+description: Resume of Gil Borenstein, robotics graduate
 lang: en
 ---
 
@@ -12,14 +12,14 @@ lang: en
 ## Education
 
 **Bachelor of Science in Robotics (Math minor)**\
-Plymouth State University, graduated August 2026
+Plymouth State University, September 2023 - August 2026
 
 - Completed SLAM mapping projects and worked with ROS on multiple platforms.
 - Conducted design and prototyping of soft robotic actuators for senior project
 - Volunteered to set up tools and equipment on the Tormach 15L lathe. Self-taught on its operations and trained peers on the machine.
 
 **Associate of Computer Science**\
-Landmark College, graduated May 2020
+Landmark College, September 2017 - May 2020
 
 - Editor for Impressions, Landmark's literary Magazine
 - Completed winter term study abroad program in London, England (January 2018)
